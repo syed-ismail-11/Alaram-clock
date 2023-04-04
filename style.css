@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ruslan+Display&family=Zen+Dots&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'san-serif';
+}
+
+/* #pic{
+  height: 114px;
+  width: 120px;
+} */
+
+body, .wrapper, .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  min-height: 100vh;
+  background: #4a98f7;
+}
+.wrapper{
+  width: 440px;
+  background: white;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 30px 30px 38px;
+}
+.wrapper img{
+  max-width: 103px;
+}
+.wrapper h1{
+  font-size: 30px;
+  font-weight:500;
+  margin: 20px 0;
+}
+.wrapper #date{
+  font-size: 25px;
+  font-weight:500;
+  margin: 0;
+}
+.wrapper #day{
+  font-size: 28px;
+  font-weight:500;
+  margin-bottom: 30px;
+  font-weight:700;
+}
+.wrapper .content{
+  width: 100%;
+  justify-content: space-between; 
+}
+.content, .coloumn{
+  border-radius: 5px;
+  /* padding: 0 10px; */
+  border: 0.5px solid #999;
+  width: calc(100% / 3 - 5px); 
+}
+.coloumn select{
+  height: 53px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+.wrapper button{
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor:pointer  ;
+  color: #fff;
+  background-color: #4a98f7;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 17px 0;
+  border-radius: 5px;
+}
+
+.wrapper, .content.disabled{
+  /* opacity: 0.6;
+  pointer-events: none; */
+}
+
+.classname{
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.8s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(5deg); }
+  10% { transform: translate(-1px, -2px) rotate(-5deg); }
+  /* 20% { transform: translate(-3px, 0px) rotate(1deg); } */
+  30% { transform: translate(3px, 2px) rotate(5deg); }
+  /* 40% { transform: translate(1px, -1px) rotate(1deg); } */
+  50% { transform: translate(-1px, 2px) rotate(-5deg); }
+  /* 60% { transform: translate(-3px, 1px) rotate(5deg); } */
+  70% { transform: translate(3px, 1px) rotate(-5deg); }
+  /* 80% { transform: translate(-1px, -1px) rotate(1deg); } */
+  90% { transform: translate(1px, 2px) rotate(5deg); }
+  /* 100% { transform: translate(1px, -2px) rotate(-5deg); } */
+}
+
+
+
+
+
